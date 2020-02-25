@@ -1,1 +1,11 @@
 readme
+
+Projet todoList :
+- Création d'un projet => Nom/Description/Durée (totals des heures passés dessus)
+- Création d'une tâche lié à ce projet => Nom/Description/Durée/état : recette,en cours, nouveau,terminé, a débug, etc... /projet
+- Affichage en tableau/colonne
+- Création d'un utilisateur/admin/Sous-admin
+- Admin droit (Tout en ce qui concerne les projets/tâches, création d'utilisateur/sous-admin)
+- Utilisateur droit (vision des tâches, changer d'état mais état à accepter par l'admin ou le sous admin)
+- Sous-admin droit (tous comme l'admin mais ne peux pas ajouter d'utilisateur ou de sous-admin)
+- Vision statistique de la durée du projet (temps passé en diagramme etc)
