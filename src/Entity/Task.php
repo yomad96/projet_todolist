@@ -38,6 +38,11 @@ class Task
      */
     private $project;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\State", inversedBy="task")
+     */
+    private $state;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -87,6 +92,18 @@ class Task
     public function setProject(?Project $project): self
     {
         $this->project = $project;
+
+        return $this;
+    }
+
+    public function getState(): ?State
+    {
+        return $this->state;
+    }
+
+    public function setState(?State $state): self
+    {
+        $this->state = $state;
 
         return $this;
     }

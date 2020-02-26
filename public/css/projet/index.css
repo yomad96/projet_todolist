@@ -1,0 +1,35 @@
+.card {
+    width: 400px;
+    height: 150px;
+    margin: 20px;
+    text-decoration: none;
+}
+.card:hover{
+    border-color: gray;
+}
+a:hover{
+    text-decoration: none;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.total{
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+}
+
+.edit-button{
+    width: max-content;
+    position: relative;
+    left: 40px;
+    top: -75px
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+}
+
