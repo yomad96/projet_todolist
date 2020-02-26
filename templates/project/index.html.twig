@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Project index{% endblock %}
+
+{% block body %}
+    <h1>Project index</h1>
+    <div class="projects">
+        {% for project in projects %}
+            <div class="total">
+                <div class="card" style="">
+                    <a class="card-body" href="{{ path('project_new') }}">
+                        <h5 class="card-title">{{ project.name }}</h5>
+                        <h5 class="card-subtitle">{{ project.totalDuration }}</h5>
+                        <p class="card-text">{{ project.description }}</p>
+                    </a>
+                </div>
+                <div class="edit-button">
+                    <a class="btn btn-primary" href="{{ path('project_edit', {'id': project.id}) }}" role="button">Edit</a>
+                </div>
+            </div>
+
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+    </div>
+
+{% endblock %}
